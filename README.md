@@ -24,8 +24,7 @@ python .\fikker-weak-password.py -f .\host.txt
 
 ![image](https://user-images.githubusercontent.com/66779835/237042513-b332f211-21ad-4130-9871-d271a2fc478e.png)
 
-疑似存在弱口令的url会被标记为绿色
-结果都会存在res.txt文本中
+疑似存在弱口令的url会被标记为绿色，结果都会存在res.txt文本中
 
 ![image](https://user-images.githubusercontent.com/66779835/237043400-710b7b1f-7683-4b36-9d9a-2093679d4e64.png)
 
